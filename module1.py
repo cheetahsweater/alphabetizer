@@ -32,7 +32,7 @@ def getfirstword(s): #Gets the first word of each line for alphabetization
     coolstring = str.casefold(s) #Allows alphabetization to ignore case
     words = coolstring.split(maxsplit=1) #Split lines by word
     if len(words)>0:
-        return words[0] #Returns first word if there are multiple
+        return words[0] #Returns first character of each word
     return ""
 
 def sorting(text): #Actual alphabetizing
