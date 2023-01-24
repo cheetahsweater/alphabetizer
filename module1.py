@@ -3,7 +3,7 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 import os
 
 window = tk.Tk() 
-window.title("The Aikman Alphabetizer")
+window.title("The Ana Alphabetizer")
 
 def openfile(): #Prompts user to open file if open button pressed
     filepath = askopenfilename(
@@ -15,7 +15,7 @@ def openfile(): #Prompts user to open file if open button pressed
     with open(filepath, mode="r", encoding="utf-8") as input_file:
         text = input_file.read() #Gathers text of opened file
         textedit.insert(tk.END, text) #Inserts text of opened file
-    window.title(f"The Aikman Alphabetizer - {os.path.basename(filepath)}") #Changes window name to reflect opened file
+    window.title(f"The Ana Alphabetizer - {os.path.basename(filepath)}") #Changes window name to reflect opened file
 
 def savefile(): #Prompts user to save file if save button pressed
     filepath = asksaveasfilename(
@@ -26,7 +26,7 @@ def savefile(): #Prompts user to save file if save button pressed
     with open(filepath, mode="w", encoding="utf-8") as output_file:
         text = textedit.get("1.0", tk.END)
         output_file.write(text) #Gathers text from text field and writes to file
-    window.title(f"The Aikman Alphabetizer - {os.path.basename(filepath)}") #Changes window name to reflect saved file
+    window.title(f"The Ana Alphabetizer - {os.path.basename(filepath)}") #Changes window name to reflect saved file
 
 def getfirstword(s): #Gets the first word of each line for alphabetization
     coolstring = str.casefold(s) #Allows alphabetization to ignore case
