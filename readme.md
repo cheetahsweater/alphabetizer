@@ -4,7 +4,7 @@ The Ana Alphabetizer is a program that takes a set of lines in a text field and 
 
 ## Installation
 
-There is no install required, the executable file should just run normally.
+There is no install required, the executable file in the release should just run normally.
 
 ## Usage
 
